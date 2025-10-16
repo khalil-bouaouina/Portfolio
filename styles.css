@@ -1,0 +1,674 @@
+body {
+    font-family: Inter, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    color: #03224c;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 1em;
+}
+
+main {
+    padding: 2em;
+}
+
+.portrait {
+    border-radius: 50%;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+section {
+    margin-bottom: 7em;
+    scroll-margin-top: 150px;
+}
+
+li:hover {
+    cursor: default;
+}
+
+
+
+header {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #03224C;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0 0 0.5em 0.5em;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    margin-right: 2em;
+}
+
+header li, header a {
+    display: inline;
+    margin: 0 5px;
+    color: #03224C;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+#profile > * {
+    margin: 0;
+    padding: 0;
+}
+
+#profile {
+    align-self: end;
+}
+
+#profile p, #profile h2 {
+    margin: 0.1em 0;
+}
+
+#about {
+    background-color: white;
+    padding: 2em;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 1em;
+}
+
+#about img {
+    grid-row: 1/4;
+    width: 25em;
+    margin-right: 5em;
+}
+
+#about > p {
+    grid-column: 2/2;
+}
+
+#about p:last-child {
+    font-size: 1.2em;
+}
+
+#about > p:last-of-type {
+    color: #03224C;
+    text-align: center;
+    font-size: 20px;
+}
+
+#about .buttons {
+    grid-column: 3/2;
+    margin-top: 1em;
+}
+
+#about button:hover {
+    transform: translateY(-5px);
+    box-shadow: -3px -3px 12px 0 rgba(0, 0, 0, 0.25), 3px 3px 12px 0 rgba(0, 0, 0, 0.25);}
+
+#about button, a {
+    border-radius: 3em;
+}
+
+#about h2 {
+    font-size: 4em;
+}
+
+#about p {
+    font-size: 1.5em;
+    line-height: 1.6;
+}
+
+#about p:first-child {
+    font-size: 2.5em;
+}
+
+.buttons {
+    display: flex;
+    justify-content: start;
+    column-gap: 4em;
+}
+
+#about .buttons a {
+    margin: 0;
+}
+
+#about button {
+    background-color: #03224C;
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    padding: 0.3em 1em;
+}
+
+#about button img {
+    width: 2em;
+    height: 2em;
+    margin-right: 0.7em;
+}
+
+.category h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.category div {
+    width: 80%;
+    height: 0.4em;
+    border-radius: 2em;
+    background: linear-gradient(90deg, #03224C 0%, rgba(3, 34, 76, 0.60) 50%, #03224C 100%);
+    justify-self: center;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.category {
+    margin-bottom: 5em;
+}
+
+#projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+}
+
+.project {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: -1px -1px 4px 0 rgba(0, 0, 0, 0.25), 1px 1px 4px 0 rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    justify-items: center;
+    gap: 0.5em;
+    padding: 1.5em 1em 1em;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: -3px -3px 12px 0 rgba(0, 0, 0, 0.25), 3px 3px 12px 0 rgba(0, 0, 0, 0.25);}
+
+.project > img:first-child {
+    border-radius: 10px;
+    border: 2px solid #03224C;
+    background-color: #03224C;
+    box-shadow: 1px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    grid-column: 1/3;
+    width: 22em;
+    height: 11em;
+    object-fit: cover;
+}
+
+.project h3 {
+    color: #03224C;
+    font-size: 1.2em;
+    grid-column: 1 / 2;
+    align-self: center;
+    justify-self: start;
+    margin-left: 1.1em;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+.fleche {
+    width: 3em;
+    height: 3em;
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+    grid-column: 2 / 3;
+    align-self: center;
+    justify-self: start;
+    margin-right: 1em;
+    padding-top: 0.5em;
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.project:hover .fleche {
+    opacity: 0.2;
+    transform: translateX(5px);
+}
+
+#technos-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+    justify-content: center;
+}
+
+#technos-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: 1em;
+    justify-content: center;
+}
+
+#technos-list li {
+    background-color: #03224C;
+    padding: 0.25em 0.5em;
+    border-radius: 0.5em;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+#contact .buttons {
+    justify-content: center;
+    gap: 4em
+}
+
+#contact button, a {
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    border-radius: 0.5em;
+}
+
+#contact button {
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+    background: #FFF;
+    border: none;
+    color: #03224C;
+    font-size: 0.9em;
+    font-weight: bold;
+    box-shadow: -1px -1px 4px 0 rgba(0, 0, 0, 0.25), 1px 1px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+#contact .buttons a:hover {
+    transform: translateY(-5px);
+    box-shadow: -3px -3px 12px 0 rgba(0, 0, 0, 0.25), 3px 3px 12px 0 rgba(0, 0, 0, 0.25);}
+
+.buttons img {
+    width: 3em;
+    height: 3em;
+    margin-right: 1em;
+}
+
+footer {
+    background-color: #03224C;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+    border-radius: 0.5em 0.5em 0 0;
+    font-size: 0.9em;
+    box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+/* Styles pour la modal*/
+
+.hidden {
+    display: none;
+}
+
+#modal-overlay {
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    align-items: center;
+    justify-content: center;
+}
+
+#modal-overlay div {
+    background-color: #FAFAFA;
+    animation: modalAppear 0.3s ease-out;
+}
+
+@keyframes modalAppear {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#modal-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    align-items: center;
+    border-radius: 10px;
+}
+
+#close-btn {
+    align-self: flex-end;
+    text-align: right;
+    margin: 0 0.25em 0 0;
+    font-size: 4em;
+}
+
+#close-btn:hover {
+    cursor: pointer;
+}
+
+#modal-body {
+    margin: 0 3em 3em;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#modal-body p {
+    text-align: justify;
+}
+
+#modal-body > img:first-child {
+    margin: 0;
+    border-radius: 10px;
+    border: 2px solid #03224C;
+    background-color: #03224C;
+    box-shadow: 1px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#modal-title {
+    display: grid;
+    align-items: center;
+}
+
+#modal-title h2 {
+    color: #03224C;
+    font-size: 2em;
+    margin: 0;
+    grid-column: 1;
+    align-self: center;
+}
+
+#modal-title > div {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+#modal-title h3 {
+    font-size: 1.1em;
+    align-self: center;
+    margin: 0 0.5em 0 0;
+}
+
+#modal-line {
+    background: linear-gradient(90deg, rgba(3, 34, 76, 0.10) 0%, rgba(3, 34, 76, 0.50) 31.25%, rgba(3, 34, 76, 0.75) 68.75%, #03224C 100%);
+    width: 100%;
+    height: 0.5em;
+    align-self: center;
+    border-radius: 0.8em;
+}
+
+#modal-technos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1em;
+}
+
+#modal-body p {
+    margin: 0;
+}
+
+#modal-technos h3 {
+    margin: 0;
+}
+
+#modal-technos ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+#modal-technos li {
+    background-color: #03224C;
+    padding: 0.25em 0.5em;
+    border-radius: 0.5em;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/*#modal-technos li:hover {
+    transform: translateY(-5px);
+    box-shadow: -3px -3px 12px 0 rgba(0, 0, 0, 0.25), 3px 3px 12px 0 rgba(0, 0, 0, 0.25);
+    cursor: default;
+}*/
+
+@media (max-width: 1071px) {
+
+    section {
+        margin-bottom: 4em;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5em;
+        border-radius: 0;
+    }
+
+    header img {
+        display: none;
+    }
+
+    header ul {
+        padding: 0;
+        margin: 0;
+        font-size: 0.5em;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    #about > * {
+        margin: 0;
+    }
+
+    #about {
+        padding: 1em;
+        border-radius: 0 0 2em 2em;
+        grid-template-columns: auto 1fr;
+    }
+
+    #about img {
+        width: 7em;
+        margin: 1em 0.5em;
+        grid-row: 1/1;
+        grid-column: 1/1;
+    }
+
+    #profile {
+        font-size: 0.35em;
+        align-self: center;
+    }
+
+    #profile p:last-child {
+        font-size: 1.9em;
+    }
+
+    #about > p:last-of-type {
+        grid-column: 1/3;
+        padding: 0 1em;
+        text-align: center;
+        font-size: 0.7em;
+    }
+
+    #about .buttons {
+        grid-column: 1/3;
+        justify-content: center;
+        margin: 1em 0 0 0;
+        gap: 0.5em;
+        font-size: 1em;
+        display: flex;
+        align-items: center;
+    }
+
+    #about button {
+        font-size: 0.85em;
+        border-radius: 1.2em;
+        height: 2.1em;
+    }
+
+    #about .buttons img {
+        width: 1em;
+        height: 1em;
+        margin-right: 0.5em;
+        margin-left: 0;
+    }
+
+    .category h2 {
+        font-size: 1.5em;
+    }
+
+    .category {
+        margin-bottom: 3em;
+    }
+
+    .project > img:first-child {
+        width: 18em;
+        height: 9em;
+    }
+
+    .project h3 {
+        font-size: 1.2em;
+        margin: 0.3em 0 0;
+        align-self: start;
+        justify-self: center;
+        text-align: center;
+    }
+
+    .fleche {
+        display: none;
+    }
+
+    #technos-list {
+        justify-content: start;
+        margin-left: 2em;
+        gap: 2em;
+    }
+
+    #technos-list ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 1em;
+        padding-right: 0.5em;
+    }
+
+    #contact .buttons {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+
+
+
+    #close-btn {
+        font-size: 2.5em;
+        margin: 0.2em 0.5em 0 0;
+    }
+
+    #modal-content {
+        max-width: 90%;
+    }
+
+    #modal-body {
+        margin: 0 3em 3em;
+        gap: 1em;
+    }
+
+    #modal-body p {
+        font-size: 0.9em;
+    }
+
+    #modal-title h2 {
+        color: #03224C;
+        font-size: 1.4em;
+        margin: 0;
+        align-self: center;
+    }
+
+    #modal-title h3 {
+        font-size: 0.9em;
+    }
+
+    #modal-line {
+        height: 0.3em;
+        border-radius: 0.5em;
+    }
+
+    #modal-technos {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    #modal-technos ul {
+        padding: 0;
+        margin: 0;
+        gap: 1em;
+    }
+
+    #modal-technos li {
+        padding: 0.25em 0.5em;
+        border-radius: 0.5em;
+        font-size: 1em;
+    }
+}

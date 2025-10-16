@@ -1,0 +1,26 @@
+{
+  "bot-discord-wov": {
+    "image": "src/bot-discord-wov.png",
+    "alt": "Image projet Bot Discord Wolvesville",
+    "title": "Bot Discord Wolvesville",
+    "type": "Projet personnel",
+    "description": "J’ai conçu un bot Discord intégrant l’API de Wolvesville, un jeu de loup-garou en ligne, afin de faciliter la gestion et l’organisation d’un clan. Le bot permettait de gérer les membres et leurs activités, tout en offrant la possibilité de rechercher facilement des profils de joueurs grâce aux données de l’API.",
+    "technologies": ["JavaScript", "NodeJS", "MySQL"]
+  },
+  "fete-lumieres": {
+    "image": "src/fete-des-lumieres.png",
+    "alt": "Image projet Fête des Lumières",
+    "title": "Optimisation de trajets",
+    "type": "Projet scolaire",
+    "description": "J'ai développé une application en Java avec Swing permettant de résoudre le problème du voyageur de commerce (TSP) appliqué au contexte de la Fête des Lumières à Lyon. L'utilisateur peut interagir directement avec une carte pour sélectionner les points d'intérêt qu'il souhaite visiter, puis choisir l'algorithme d'optimisation à appliquer afin d'obtenir un itinéraire optimal.",
+    "technologies": ["Java",  "Git", "GitLab"]
+  },
+  "annuaire": {
+    "image": "src/annuaire.png",
+    "alt": "Image projet Annuaire",
+    "title": "Annuaire",
+    "type": "Projet scolaire",
+    "description": "J’ai réalisé un projet en C consistant en un annuaire en ligne de commande permettant de gérer une base de clients importée depuis un fichier CSV. L’utilisateur pouvait y effectuer diverses opérations comme ajouter, supprimer, modifier ou afficher les clients, avec la possibilité d’appliquer un système de tri lors de l’affichage. Toutes les modifications apportées via l’interface en console étaient ensuite enregistrées dans le fichier CSV, garantissant la persistance des données.",
+    "technologies": ["C", "Git", "GitLab", "Trello"]
+  }
+}
