@@ -1,6 +1,6 @@
 {
   "bot-discord-wov": {
-    "image": "src/bot-discord-wov.png",
+    "image": "src/images/bot-discord-wov.png",
     "alt": "Image projet Bot Discord Wolvesville",
     "title": "Bot Discord Wolvesville",
     "type": "Projet personnel",
@@ -8,7 +8,7 @@
     "technologies": ["JavaScript", "NodeJS", "MySQL"]
   },
   "fete-lumieres": {
-    "image": "src/fete-des-lumieres.png",
+    "image": "src/images/fete-des-lumieres.png",
     "alt": "Image projet Fête des Lumières",
     "title": "Optimisation de trajets",
     "type": "Projet scolaire",
@@ -16,7 +16,7 @@
     "technologies": ["Java",  "Git", "GitLab"]
   },
   "annuaire": {
-    "image": "src/annuaire.png",
+    "image": "src/images/annuaire.png",
     "alt": "Image projet Annuaire",
     "title": "Annuaire",
     "type": "Projet scolaire",
