@@ -10,7 +10,6 @@ async function loadProjectsData() {
 }
 
 document.addEventListener('DOMContentLoaded', async function() {
-    // Charger les données des projets
     await loadProjectsData();
 
     document.querySelectorAll('.project').forEach(item => {

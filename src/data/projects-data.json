@@ -22,5 +22,13 @@
     "type": "Projet scolaire",
     "description": "J’ai réalisé un projet en C consistant en un annuaire en ligne de commande permettant de gérer une base de clients importée depuis un fichier CSV. L’utilisateur pouvait y effectuer diverses opérations comme ajouter, supprimer, modifier ou afficher les clients, avec la possibilité d’appliquer un système de tri lors de l’affichage. Toutes les modifications apportées via l’interface en console étaient ensuite enregistrées dans le fichier CSV, garantissant la persistance des données.",
     "technologies": ["C", "Git", "GitLab", "Trello"]
+  },
+  "lyon-central": {
+    "image": "src/images/lyon-central.png",
+    "alt": "Image projet Lyon Central",
+    "title": "Lyon Central",
+    "type": "Projet scolaire",
+    "description": "Projet de groupe où nous avons développé un jeu web de stratégie temps réel sur la carte de Lyon, combinant cartographie interactive (Leaflet) et gameplay tactique. Le jeu propose une gestion d'interventions d'urgence avec positionnement d'unités de secours face à des incidents générés dynamiquement, tout en maintenant l'équilibre budgétaire pour éviter la défaite. Intègre un système de progression avec récompenses (or/XP) débloquant du contenu cosmétique.",
+    "technologies": ["HTML", "CSS", "Javascript", "ExpressJS", "Git", "GitLab"]
   }
 }
